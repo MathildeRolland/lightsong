@@ -1,0 +1,70 @@
+@use '../shared/colors';
+
+.player {
+    width: 100%;
+    background-color: colors.$light;
+    position: fixed;
+    bottom: 0;
+    padding: .5em 1em;
+
+    &__infos {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__song, &__artist {
+        margin: .2em 0 .5em 0;
+    }
+
+    &__song {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-right: .8em;
+    }
+
+    &__artist {
+        font-style: italic;
+        color: colors.$grey;
+    }
+
+    &__range {
+        width: 100%;
+    }
+
+    &__times {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__time {
+        margin: 0;
+    }
+
+    &__commands {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__play-pause {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom right, #FFEDDF, #E7D8FD );
+        margin: 0 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7em;
+
+        div {
+            background-color: colors.$light;
+            border-radius: 50%;
+            padding: .2em;
+        }
+    }
+
+    &__previous, &__next {
+        font-size: 1.5em;
+    }
+}

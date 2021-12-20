@@ -1,0 +1,53 @@
+@use '../shared/colors';
+
+.menu {
+    background: linear-gradient(to bottom, #FFEDDF, #E7D8FD);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 1em;
+        padding: 1em;
+    }
+}
+
+.burger {
+    width: 35px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1em;;
+
+    &__line {
+        width: 100%;
+        height: 4px;
+        background-color: colors.$dark;
+        border-radius: 10px;
+    }
+}
+
+.nav {
+    &__list {
+        margin: 0;
+        padding: 0;
+        width: 75%;
+        margin: auto;
+    }
+
+    &__list:first-child {
+        border-bottom: 2px solid colors.$light;
+    }
+
+    &__items {
+        list-style-type: none;
+        padding: 1em 0;
+        font-size: 1.3em;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: colors.$dark;
+    }
+}
